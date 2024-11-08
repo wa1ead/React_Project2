@@ -1,4 +1,14 @@
-function Player({ player }) {
+function Player({
+  player = {
+    name: "Cristiano Ronaldo",
+    age: 39,
+    nationality: "🇵🇹",
+    team: "Real Madrid",
+    jerseyNumber: 7,
+    image:
+      "https://i.pinimg.com/736x/96/3d/64/963d643c81ac09fa9beb117346a1b12c.jpg",
+  },
+}) {
   return (
     <div key={player.name} className="group relative">
       <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
